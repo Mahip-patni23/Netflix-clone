@@ -1,0 +1,235 @@
+.planform {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.planform_container {
+  color: gray;
+  display: flex;
+  margin: 8rem;
+}
+
+.planform_profile_avatar > img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.planform_userName > p {
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 1.2rem;
+}
+
+.planform_details {
+  margin-top: 40px;
+}
+
+.planform_details > h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.planform_point {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.planform_point_icon {
+  color: red;
+  margin-right: 5px;
+}
+
+.planform_point > h3 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.planform_plans {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.planform_singlePlan {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s linear;
+  margin-right: 20px;
+}
+
+.planform_planType {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(158, 1, 1);
+  color: white;
+  opacity: 0.6;
+  transition: all 0.3s linear;
+  margin-bottom: 40px;
+}
+
+.planform_singlePlan > p {
+  /* margin-right: 40px; */
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.planform_planType:hover {
+  opacity: 1;
+  width: 100px;
+  height: 100px;
+}
+
+.planform_singlePlan:hover {
+  color: red;
+}
+
+.planform_devices_accessible {
+  display: flex;
+  flex-direction: column;
+}
+
+.planform_single_device {
+  text-align: center;
+  /* margin-right: 40px; */
+  margin-bottom: 40px;
+}
+
+.planform_subscribeBtn {
+  /* margin-left: 20px; */
+  /* margin-right: 40px; */
+  padding: 10px 20px;
+  border: transparent;
+  background-color: rgb(218, 0, 0);
+  color: white;
+  font-weight: 400;
+  font-size: 1rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.planform_subscribeBtn:hover {
+  background-color: rgb(167, 0, 0);
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.planform_footer > p {
+  margin-bottom: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.planform_footer > p > a {
+  text-decoration: none;
+  color: rgb(182, 3, 3);
+}
+
+.planform_footer > p > a:hover {
+  text-decoration: underline;
+}
+
+.planform_navbar_white {
+  background-color: white;
+  height: 10vh;
+}
+
+.home_logo_small {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  object-fit: contain;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.3s linear;
+}
+
+@media only screen and (max-width: 860px) {
+  .planform_planType {
+    width: 70px;
+    height: 70px;
+  }
+
+  .planform_singlePlan {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 737px) {
+  .planform_container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .planform_userName {
+    text-align: center;
+  }
+
+  .planform_plans {
+    text-align: center;
+  }
+
+  .planform_details {
+    padding: 20px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .planform_planType {
+    width: 50px;
+    height: 50px;
+  }
+
+  .planform_singlePlan {
+    margin-right: 5px;
+  }
+
+  .planform_subscribeBtn {
+    padding: 5px 10px;
+  }
+
+  .planform_footer {
+    padding: 20px;
+  }
+
+  .planform_singlePlan > p {
+    font-size: 0.9rem;
+  }
+
+  .planform_planType:hover {
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .planform_planType {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+
+  .planform_subscribeBtn {
+    font-size: 0.8rem;
+    padding: 5px 5px;
+  }
+}
